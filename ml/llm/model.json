@@ -1,0 +1,7 @@
+{
+  "name": "Qwen3.5-0.8B-pandastic-Q4_K_M.gguf",
+  "version": "models-v1",
+  "url": "https://github.com/Casa-del-dev/Pandastic-4/releases/download/models-v1/Qwen3.5-0.8B-pandastic-Q4_K_M.gguf",
+  "bytes": 541903296,
+  "sha256": "b738eb2e5345400bce11ff85e3752156084fb27f1a6e038220d69caa9544db16"
+}

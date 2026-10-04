@@ -1,0 +1,81 @@
+{
+  "model": "Qwen3.5-0.8B-Q4_K_M.gguf",
+  "threads": 4,
+  "sms": 220,
+  "same": 220,
+  "tokens_total": [
+    7115,
+    4745
+  ],
+  "generation_ms_total": [
+    447149,
+    234778
+  ],
+  "sets": {
+    "dev": {
+      "n": 100,
+      "same_lang_intent_crop_symptom": 100,
+      "tokens_median": [
+        32.0,
+        21.0
+      ],
+      "tokens_total": [
+        3246,
+        2149
+      ],
+      "generation_ms_total": [
+        282882,
+        119856
+      ]
+    },
+    "heldout": {
+      "n": 50,
+      "same_lang_intent_crop_symptom": 50,
+      "tokens_median": [
+        32.0,
+        21.0
+      ],
+      "tokens_total": [
+        1622,
+        1076
+      ],
+      "generation_ms_total": [
+        83403,
+        57281
+      ]
+    },
+    "fresh": {
+      "n": 40,
+      "same_lang_intent_crop_symptom": 40,
+      "tokens_median": [
+        32.0,
+        21.5
+      ],
+      "tokens_total": [
+        1288,
+        868
+      ],
+      "generation_ms_total": [
+        47234,
+        33012
+      ]
+    },
+    "fresh2": {
+      "n": 30,
+      "same_lang_intent_crop_symptom": 30,
+      "tokens_median": [
+        32.0,
+        22.5
+      ],
+      "tokens_total": [
+        959,
+        652
+      ],
+      "generation_ms_total": [
+        33630,
+        24629
+      ]
+    }
+  },
+  "differences": []
+}

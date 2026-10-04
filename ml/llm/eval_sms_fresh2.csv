@@ -1,0 +1,31 @@
+id,text,lang,intent,crop,symptom,commodity,offer,note
+g1,"Shikamoo, majani ya kahawa yanaanguka sana na yana unga wa njano",sw,diagnose,coffee,rust,,,
+g2,pls help my arabica has yellow orange spots under leaves,en,diagnose,coffee,rust,,,
+g3,maharage yangu yana vipele vya kahawia chini ya jani,sw,diagnose,bean,rust,,,vipele = pustules
+g4,"there are caterpillars in my maize, the leaves have holes",en,diagnose,maize,fall_armyworm,,,
+g5,funza wamevamia mahindi yote shambani,sw,diagnose,maize,fall_armyworm,,,
+g6,corn leaves with yellow streaks all along,en,diagnose,maize,streak_virus,,,
+g7,"kahawa yangu ina tatizo, majani yanakauka",sw,diagnose,coffee,,,,vague
+g8,beans dying in the field what is the problem,en,diagnose,bean,,,,vague
+g9,ndizi zangu zina ugonjwa,sw,diagnose,,,,,"banana, unsupported crop"
+g10,coffee leaves have grey spots with brown ring,en,diagnose,coffee,cercospora,,,
+g11,mahindi yana madoa ya kijivu marefu kama sigara,sw,diagnose,maize,leaf_blight,,,
+g12,Wadudu wanachimba ndani ya majani ya kahawa,sw,diagnose,coffee,miner,,,insects digging inside
+g13,bei ya kahawa kiboko leo sokoni ni ngapi,sw,price,coffee,,coffee_robusta_kiboko,,
+g14,"buyer wants to pay 13,500 for parchment",en,price,coffee,,coffee_arabica_parchment,13500,
+g15,wanataka kununua mahindi kwa shilingi 750,sw,price,maize,,maize_grain,750,
+g16,Beans 3000 per kilo fair?,en,price,bean,,beans_dry,3000,
+g17,nimeambiwa bei ya maharage ni elfu nne,sw,price,bean,,beans_dry,4000,number words
+g18,how much for a kilo of maize today,en,price,maize,,maize_grain,,
+g19,P 3 2700,sw,price,bean,,beans_dry,2700,menu code
+g20,drugar inauzwa bei gani mwezi huu,sw,price,coffee,,coffee_arabica_drugar,,
+g21,mtu ametoa 15k kwa kahawa yangu,sw,price,coffee,,coffee_arabica_parchment,15000,
+g22,bei ya mihogo,sw,price,,,,,"cassava, unsupported crop"
+g23,nipande mahindi lini mwaka huu,sw,planting,maize,,,,
+g24,is it time to sow beans,en,planting,bean,,,,
+g25,msimu wa kupanda kahawa ni lini,sw,planting,coffee,,,,
+g26,"hello, what can you do",en,help,,,,,
+g27,msaada tafadhali,sw,help,,,,,
+g28,good morning,en,help,,,,,greeting
+g29,nashukuru sana,sw,other,,,,,
+g30,the rain was heavy yesterday,en,other,,,,,weather chat

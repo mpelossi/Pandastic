@@ -1,0 +1,100 @@
+plugins { id 'com.android.application' }
+
+// Keep React source separate; package its production build inside the APK.
+def frontendDirectory = rootProject.file('../frontend')
+def generatedFrontendAssets = layout.buildDirectory.dir('generated/frontendAssets')
+def onWindows = System.getProperty('os.name').toLowerCase().contains('windows')
+def onPath = { String exe -> (System.getenv('PATH') ?: '').split(File.pathSeparator).any { new File(it, exe).canExecute() } }
+// Corepack runs the pnpm pinned in package.json; Node 25+ no longer ships Corepack, so fall back to pnpm.
+def pnpm = onPath(onWindows ? 'corepack.cmd' : 'corepack') ? [onWindows ? 'corepack.cmd' : 'corepack', 'pnpm'] : [onWindows ? 'pnpm.cmd' : 'pnpm']
+
+def installFrontend = tasks.register('installFrontend', Exec) {
+    workingDir frontendDirectory
+    commandLine(*pnpm, 'install', '--frozen-lockfile')
+    environment 'CI', 'true'  // never wait on a pnpm prompt (e.g. purge node_modules after a pnpm version switch)
+    inputs.files(['package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml'].collect { new File(frontendDirectory, it) })
+    outputs.dir(new File(frontendDirectory, 'node_modules'))
+}
+
+def buildFrontend = tasks.register('buildFrontend', Exec) {
+    dependsOn installFrontend
+    workingDir frontendDirectory
+    commandLine(*pnpm, 'run', 'build')
+    environment 'CI', 'true'
+    inputs.dir(new File(frontendDirectory, 'src'))
+    inputs.files(['package.json', 'pnpm-lock.yaml', 'index.html', 'tsconfig.json', 'vite.config.ts'].collect { new File(frontendDirectory, it) })
+    outputs.dir(new File(frontendDirectory, 'dist'))
+}
+
+// Qwen grammar + prompt are owned by ml/llm; copy them so the APK never drifts from the source.
+def generatedLlmAssets = layout.buildDirectory.dir('generated/llmAssets')
+def syncLlmAssets = tasks.register('syncLlmAssets', Sync) {
+    from(rootProject.file('../ml/llm')) { include 'slots.gbnf', 'system_prompt.txt', 'model.json' }
+    into(generatedLlmAssets.map { it.dir('llm') })
+}
+
+def syncFrontendAssets = tasks.register('syncFrontendAssets', Sync) {
+    dependsOn buildFrontend
+    from(new File(frontendDirectory, 'dist'))
+    into(generatedFrontendAssets.map { it.dir('pandastic') })
+}
+
+def speechModel = rootProject.file('../ml/artifacts/speech/ggml-tiny-q5_1.bin')
+def generatedSpeechAssets = layout.buildDirectory.dir('generated/speechAssets')
+def fetchSpeechModel = tasks.register('fetchSpeechModel', Exec) {
+    workingDir rootProject.projectDir.parentFile
+    commandLine 'node', 'scripts/fetch-whisper-tiny.mjs'
+    inputs.file(rootProject.file('../scripts/fetch-whisper-tiny.mjs'))
+    outputs.file(speechModel)
+    // Verify the cached file too, so a damaged model never enters an APK.
+    outputs.upToDateWhen { false }
+}
+def syncSpeechAssets = tasks.register('syncSpeechAssets', Sync) {
+    dependsOn fetchSpeechModel
+    from(speechModel) { into 'speech' }
+    from('src/main/speech-NOTICE.txt') { into 'speech' }
+    into(generatedSpeechAssets)
+}
+
+android {
+    namespace 'org.pandastic.relay'
+    compileSdk 35
+    ndkVersion '28.2.13676358'
+    defaultConfig {
+        applicationId 'org.pandastic.relay'
+        minSdk 24 // onnxruntime-android 1.30 requires 24
+        targetSdk 35
+        versionCode 1
+        versionName '0.1.0'
+        // Phones are arm64; x86_64 only for the emulator. Each ABI adds ~45 MB (ONNX Runtime + llama.cpp).
+        // -PphoneOnly drops the emulator ABI for the side-loadable APK (make release).
+        ndk { abiFilters(*(project.hasProperty('phoneOnly') ? ['arm64-v8a'] : ['arm64-v8a', 'x86_64'])) }
+    }
+    buildTypes {
+        // Hackathon build: signed with the debug key so it can be side-loaded; not for a store.
+        release { signingConfig signingConfigs.debug }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    sourceSets.main.assets.srcDir(generatedFrontendAssets)
+    sourceSets.main.assets.srcDir(generatedLlmAssets)
+    sourceSets.main.assets.srcDir(generatedSpeechAssets)
+    // Speech is available on Basic phones too; -Pnollm disables only Qwen's runtime.
+    externalNativeBuild { cmake { path 'src/main/cpp/CMakeLists.txt'; version '3.22.1' } }
+    defaultConfig.externalNativeBuild.cmake.arguments "-DPANDASTIC_NO_LLM=${project.hasProperty('nollm') ? 'ON' : 'OFF'}"
+    // Models are memory-mapped/opened from assets; keep them uncompressed.
+    androidResources { noCompress += ['onnx', 'sqlite', 'gguf', 'bin'] }
+    // brain/ logic is unit-tested on the JVM; android.* stubs return defaults instead of throwing.
+    testOptions { unitTests.returnDefaultValues = true }
+}
+
+tasks.named('preBuild').configure { dependsOn syncFrontendAssets, syncLlmAssets, syncSpeechAssets }
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.12.1'
+    implementation 'androidx.core:core:1.15.0'
+    implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.30.0'
+    testImplementation 'junit:junit:4.13.2'
+}

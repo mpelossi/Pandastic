@@ -1,0 +1,238 @@
+{
+  "eval": {
+    "test_set": "held-out images from training sources: CCMT (Ghana), iBean (Uganda), JMuBEN (Kenya, lesion close-ups), PlantDoc, RoCoLe (Ecuador, smartphone photos on the plant); + held-out `other`",
+    "n": 1999,
+    "accuracy": 0.954,
+    "coverage_at_threshold": 0.9903,
+    "selective_accuracy": 0.9349,
+    "other_false_accept": 0.0104,
+    "thresholds_met_target": true,
+    "target_selective_accuracy": 0.9,
+    "non_plant_false_accept": 0.0047,
+    "non_plant_test_n": 635,
+    "by_crop": {
+      "coffee": {
+        "n_plant": 640,
+        "accuracy": 0.9794,
+        "coverage_at_threshold": 0.9891,
+        "selective_accuracy": 0.9763
+      },
+      "maize": {
+        "n_plant": 364,
+        "accuracy": 0.9447,
+        "coverage_at_threshold": 0.989,
+        "selective_accuracy": 0.85
+      },
+      "bean": {
+        "n_plant": 129,
+        "accuracy": 0.9849,
+        "coverage_at_threshold": 1.0,
+        "selective_accuracy": 0.969
+      }
+    },
+    "by_source": {
+      "ccmt": {
+        "n_plant": 338,
+        "accuracy": 0.9485,
+        "coverage_at_threshold": 0.9911,
+        "selective_accuracy": 0.8537
+      },
+      "ibean": {
+        "n_plant": 129,
+        "accuracy": 0.9849,
+        "coverage_at_threshold": 1.0,
+        "selective_accuracy": 0.969
+      },
+      "jmuben": {
+        "n_plant": 280,
+        "accuracy": 0.9887,
+        "coverage_at_threshold": 0.9929,
+        "selective_accuracy": 1.0
+      },
+      "plantdoc": {
+        "n_plant": 26,
+        "accuracy": 0.9809,
+        "coverage_at_threshold": 0.9615,
+        "selective_accuracy": 0.8
+      },
+      "rocole": {
+        "n_plant": 360,
+        "accuracy": 0.9763,
+        "coverage_at_threshold": 0.9861,
+        "selective_accuracy": 0.9577
+      }
+    }
+  },
+  "thresholds_calib": {
+    "coverage": 0.9916083916083916,
+    "selective_accuracy": 0.9026798307475318,
+    "other_false_accept": 0.010962241169305725,
+    "answered": 709,
+    "n_plant": 715,
+    "n_other": 821,
+    "min_prob": 0.4,
+    "min_margin": 0.0,
+    "met_target": true
+  },
+  "per_class_test": {
+    "coffee_healthy": {
+      "support": 202,
+      "recall": 0.9851485148514851,
+      "precision": 0.9299065420560748
+    },
+    "coffee_rust": {
+      "support": 288,
+      "recall": 0.9479166666666666,
+      "precision": 0.9855595667870036
+    },
+    "coffee_miner": {
+      "support": 93,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "coffee_cercospora": {
+      "support": 18,
+      "recall": 1.0,
+      "precision": 0.9473684210526315
+    },
+    "coffee_phoma": {
+      "support": 39,
+      "recall": 0.9487179487179487,
+      "precision": 1.0
+    },
+    "maize_leaf_blight": {
+      "support": 117,
+      "recall": 0.8717948717948718,
+      "precision": 0.796875
+    },
+    "maize_leaf_spot": {
+      "support": 103,
+      "recall": 0.7864077669902912,
+      "precision": 0.801980198019802
+    },
+    "bean_healthy": {
+      "support": 42,
+      "recall": 1.0,
+      "precision": 0.9545454545454546
+    },
+    "bean_angular_leaf_spot": {
+      "support": 44,
+      "recall": 1.0,
+      "precision": 0.9166666666666666
+    },
+    "bean_rust": {
+      "support": 43,
+      "recall": 0.9069767441860465,
+      "precision": 1.0
+    },
+    "maize_healthy": {
+      "support": 19,
+      "recall": 0.8421052631578947,
+      "precision": 1.0
+    },
+    "maize_fall_armyworm": {
+      "support": 29,
+      "recall": 0.896551724137931,
+      "precision": 0.8387096774193549
+    },
+    "maize_streak_virus": {
+      "support": 96,
+      "recall": 0.8541666666666666,
+      "precision": 0.8723404255319149
+    },
+    "other": {
+      "support": 866,
+      "recall": 0.9872979214780601,
+      "precision": 0.9965034965034965
+    }
+  },
+  "history": [],
+  "manifest": {
+    "counts": {
+      "calib/bean_angular_leaf_spot": 43,
+      "calib/bean_healthy": 43,
+      "calib/bean_rust": 44,
+      "calib/coffee_healthy": 113,
+      "calib/coffee_rust": 98,
+      "calib/maize_fall_armyworm": 28,
+      "calib/maize_healthy": 21,
+      "calib/maize_leaf_blight": 120,
+      "calib/maize_leaf_spot": 108,
+      "calib/maize_streak_virus": 98,
+      "calib/other": 821,
+      "test/bean_angular_leaf_spot": 44,
+      "test/bean_healthy": 42,
+      "test/bean_rust": 43,
+      "test/coffee_cercospora": 18,
+      "test/coffee_healthy": 202,
+      "test/coffee_miner": 93,
+      "test/coffee_phoma": 39,
+      "test/coffee_rust": 288,
+      "test/maize_fall_armyworm": 29,
+      "test/maize_healthy": 20,
+      "test/maize_leaf_blight": 119,
+      "test/maize_leaf_spot": 103,
+      "test/maize_streak_virus": 98,
+      "test/other": 866,
+      "train/bean_angular_leaf_spot": 302,
+      "train/bean_healthy": 299,
+      "train/bean_rust": 305,
+      "train/coffee_cercospora": 180,
+      "train/coffee_healthy": 531,
+      "train/coffee_miner": 543,
+      "train/coffee_phoma": 433,
+      "train/coffee_rust": 1120,
+      "train/maize_fall_armyworm": 200,
+      "train/maize_healthy": 146,
+      "train/maize_leaf_blight": 834,
+      "train/maize_leaf_spot": 747,
+      "train/maize_streak_virus": 685,
+      "train/other": 4021,
+      "val/bean_angular_leaf_spot": 43,
+      "val/bean_healthy": 43,
+      "val/bean_rust": 44,
+      "val/coffee_cercospora": 29,
+      "val/coffee_healthy": 103,
+      "val/coffee_miner": 85,
+      "val/coffee_phoma": 72,
+      "val/coffee_rust": 193,
+      "val/maize_fall_armyworm": 28,
+      "val/maize_healthy": 21,
+      "val/maize_leaf_blight": 119,
+      "val/maize_leaf_spot": 110,
+      "val/maize_streak_virus": 98,
+      "val/other": 620
+    },
+    "by_source": {
+      "calib/caltech101": 590,
+      "calib/ccmt": 349,
+      "calib/ibean": 130,
+      "calib/plantdoc": 257,
+      "calib/rocole": 211,
+      "test/caltech101": 635,
+      "test/ccmt": 343,
+      "test/ibean": 129,
+      "test/jmuben": 280,
+      "test/plantdoc": 257,
+      "test/rocole": 360,
+      "train/bracol": 1142,
+      "train/caltech101": 2396,
+      "train/ccmt": 2430,
+      "train/ibean": 906,
+      "train/jmuben": 983,
+      "train/plantdoc": 1807,
+      "train/rocole": 682,
+      "val/bracol": 201,
+      "val/caltech101": 388,
+      "val/ccmt": 350,
+      "val/ibean": 130,
+      "val/jmuben": 141,
+      "val/plantdoc": 258,
+      "val/rocole": 140
+    },
+    "jmuben_raw": 58550,
+    "jmuben_unique": 1404,
+    "coffee_split": "mix",
+    "labels_without_training_data": []
+  }
+}

@@ -1,0 +1,15 @@
+true \ predicted,coffee_healthy,coffee_rust,coffee_miner,coffee_cercospora,coffee_phoma,maize_leaf_blight,maize_leaf_spot,bean_healthy,bean_angular_leaf_spot,bean_rust,maize_healthy,maize_fall_armyworm,maize_streak_virus,other
+coffee_healthy,198,4,0,0,0,0,0,0,0,0,0,0,0,0
+coffee_rust,20,268,0,0,0,0,0,0,0,0,0,0,0,0
+coffee_miner,0,0,93,0,0,0,0,0,0,0,0,0,0,0
+coffee_cercospora,0,0,0,18,0,0,0,0,0,0,0,0,0,0
+coffee_phoma,0,0,0,0,37,0,0,0,0,0,0,0,0,2
+maize_leaf_blight,0,0,0,0,0,100,12,0,0,0,0,0,5,0
+maize_leaf_spot,0,0,0,0,0,13,82,0,0,0,1,0,7,0
+bean_healthy,0,0,0,0,0,0,0,42,0,0,0,0,0,0
+bean_angular_leaf_spot,0,0,0,0,0,0,0,0,43,1,0,0,0,0
+bean_rust,0,0,0,0,0,0,0,0,2,41,0,0,0,0
+maize_healthy,0,0,0,0,0,0,0,0,0,0,19,0,0,0
+maize_fall_armyworm,0,0,0,0,0,2,0,0,0,0,0,25,1,1
+maize_streak_virus,0,0,0,0,0,5,5,0,0,0,0,1,85,0
+other,2,0,0,1,0,4,1,0,3,1,0,9,0,845

@@ -1,0 +1,101 @@
+id,text,lang,intent,crop,symptom,commodity,offer,note
+1,majani ya kahawa yana unga wa njano chini,sw,diagnose,coffee,rust,,,rust classic
+2,Kahawa yangu ina kutu,sw,diagnose,coffee,rust,,,
+3,madoa ya machungwa chini ya majani ya kahawa,sw,diagnose,coffee,rust,,,orange spots: no lexicon phrase
+4,unga wa machungwa kwenye majani,sw,diagnose,,rust,,,no crop
+5,coffee leaves have orange powder underneath,en,diagnose,coffee,rust,,,
+6,yellow powder under my coffee leaves,en,diagnose,coffee,rust,,,
+7,my coffee has rust what to spray,en,diagnose,coffee,rust,,,
+8,bean leaves have rust spots,en,diagnose,bean,rust,,,
+9,maharage yana kutu,sw,diagnose,bean,rust,,,
+10,kuna njia nyeupe ndani ya majani ya kahawa,sw,diagnose,coffee,miner,,,tunnels described in words
+11,mchimba majani kwenye kahawa,sw,diagnose,coffee,miner,,,
+12,leaf miner on coffee,en,diagnose,coffee,miner,,,
+13,white trails inside the coffee leaf,en,diagnose,coffee,miner,,,
+14,madoa ya kahawia yenye kati ya kijivu kwenye kahawa,sw,diagnose,coffee,cercospora,,,
+15,brown eye spot on coffee leaves,en,diagnose,coffee,cercospora,,,
+16,coffee leaves round brown spots grey centre,en,diagnose,coffee,cercospora,,,
+17,madoa meusi kwenye kahawa baada ya upepo baridi,sw,diagnose,coffee,phoma,,,
+18,black spots and dry tips on coffee after cold wind,en,diagnose,coffee,phoma,,,
+19,viwavijeshi wanakula mahindi,sw,diagnose,maize,fall_armyworm,,,
+20,funza kwenye mahindi,sw,diagnose,maize,fall_armyworm,,,
+21,viwavi wamekula majani ya mahindi,sw,diagnose,maize,fall_armyworm,,,
+22,worms eating my maize leaves,en,diagnose,maize,fall_armyworm,,,
+23,there are caterpillars in the maize funnel,en,diagnose,maize,fall_armyworm,,,
+24,fall army worm in maize,en,diagnose,maize,fall_armyworm,,,
+25,armyworms everywhere,en,diagnose,,fall_armyworm,,,no crop
+26,mahindi yana mistari ya njano,sw,diagnose,maize,streak_virus,,,
+27,yellow stripes on maize leaves,en,diagnose,maize,streak_virus,,,
+28,maize streak virus,en,diagnose,maize,streak_virus,,,
+29,ukungu kwenye majani ya mahindi,sw,diagnose,maize,leaf_blight,,,
+30,maize leaf blight long grey spots,en,diagnose,maize,leaf_blight,,,
+31,madoa ya pembe kwenye maharage,sw,diagnose,bean,angular_leaf_spot,,,
+32,angular spots on bean leaves,en,diagnose,bean,angular_leaf_spot,,,
+33,mahindi yanakauka na kufa,sw,diagnose,maize,,,,no clear symptom
+34,majani ya kahawa yanageuka njano,sw,diagnose,coffee,,,,yellowing only
+35,my coffee leaves are falling,en,diagnose,coffee,,,,
+36,wadudu kwenye kahawa,sw,diagnose,coffee,,,,insects generic
+37,kuna shida kwenye maharage,sw,diagnose,bean,,,,
+38,something is wrong with my maize,en,diagnose,maize,,,,
+39,leaves look weird today should I spray,en,diagnose,,,,,SMS plan test case 2
+40,1 unga wa njano,sw,diagnose,coffee,rust,,,short code + symptom
+41,2 viwavi,sw,diagnose,maize,fall_armyworm,,,short code + symptom
+42,3 kutu,sw,diagnose,bean,rust,,,short code + symptom
+43,Yellow orange powder spots under my coffee leaves lower slope,en,diagnose,coffee,rust,,,SMS plan test case 1
+44,P 1 12000,sw,price,coffee,,coffee_arabica_parchment,12000,menu
+45,P 1 12k,sw,price,coffee,,coffee_arabica_parchment,12000,
+46,p 2 900,sw,price,maize,,maize_grain,900,
+47,P 3 2500,sw,price,bean,,beans_dry,2500,
+48,bei ya kahawa leo,sw,price,coffee,,coffee_arabica_parchment,,
+49,bei ya kahawa? mnunuzi anasema 12000,sw,price,coffee,,coffee_arabica_parchment,12000,
+50,"mnunuzi ananipa 12,000 kwa kilo ya kahawa",sw,price,coffee,,coffee_arabica_parchment,12000,
+51,ninauza kahawa kwa elfu 14,sw,price,coffee,,coffee_arabica_parchment,14000,
+52,bei ya kiboko,sw,price,coffee,,coffee_robusta_kiboko,,
+53,kiboko 5000 ni bei nzuri?,sw,price,coffee,,coffee_robusta_kiboko,5000,
+54,bei ya FAQ leo,sw,price,coffee,,coffee_robusta_faq,,
+55,bei ya mahindi,sw,price,maize,,maize_grain,,
+56,mahindi 900,sw,price,maize,,maize_grain,900,
+57,bei ya maharage sokoni,sw,price,bean,,beans_dry,,
+58,maharage 2500 kwa kilo,sw,price,bean,,beans_dry,2500,
+59,coffee price today,en,price,coffee,,coffee_arabica_parchment,,
+60,The buyer offers 12000 for my parchment. Is that fair?,en,price,coffee,,coffee_arabica_parchment,12000,handoff example
+61,buyer offering 12.5k per kg coffee,en,price,coffee,,coffee_arabica_parchment,12500,
+62,how much is maize per kilo,en,price,maize,,maize_grain,,
+63,selling beans at 3000 is it good,en,price,bean,,beans_dry,3000,
+64,price of drugar,en,price,coffee,,coffee_arabica_drugar,,
+65,bei ya coffee 15000,sw,price,coffee,,coffee_arabica_parchment,15000,code-switching
+66,"maize price 1,200",en,price,maize,,maize_grain,1200,
+67,bei gani,sw,price,,,,,no crop
+68,what price,en,price,,,,,
+69,mnunuzi amekuja na 11000,sw,price,,,,11000,no crop
+70,nipande mahindi lini,sw,planting,maize,,,,
+71,msimu wa kupanda maharage,sw,planting,bean,,,,
+72,when to plant maize this season,en,planting,maize,,,,
+73,when should I sow beans,en,planting,bean,,,,
+74,habari,sw,help,,,,,
+75,?,sw,help,,,,,
+76,msaada,sw,help,,,,,
+77,hello,en,help,,,,,
+78,help,en,help,,,,,
+79,menu,en,help,,,,,
+80,jambo,sw,help,,,,,
+81,asante sana,sw,other,,,,,
+82,thank you,en,other,,,,,
+83,nimefika nyumbani,sw,other,,,,,
+84,ok,en,other,,,,,
+85,Majani ya KAHAWA yana unga wa NJANO!!,sw,diagnose,coffee,rust,,,caps + punctuation
+86,mahind yana viwavi,sw,diagnose,maize,fall_armyworm,,,typo mahind
+87,kahwa ina kutu,sw,diagnose,coffee,rust,,,typo kahwa
+88,bei ya kahwa,sw,price,coffee,,coffee_arabica_parchment,,typo kahwa
+89,mnunuzi wa kahawa anasema 10 elfu,sw,price,coffee,,coffee_arabica_parchment,10000,10 elfu order
+90,kahawa ya arabica bei,sw,price,coffee,,coffee_arabica_parchment,,
+91,robusta price kiboko 5500,en,price,coffee,,coffee_robusta_kiboko,5500,
+92,sell 100 kg coffee at 15000,en,price,coffee,,coffee_arabica_parchment,15000,quantity and price
+93,nina kilo 50 za kahawa mnunuzi anatoa 13000,sw,price,coffee,,coffee_arabica_parchment,13000,quantity and price
+94,maharagwe yana madoa ya pembe,sw,diagnose,bean,angular_leaf_spot,,,maharagwe spelling
+95,corn leaves have holes,en,diagnose,maize,fall_armyworm,,,holes -> armyworm
+96,majani ya mahindi yana matundu,sw,diagnose,maize,fall_armyworm,,,matundu
+97,coffee berries black,en,diagnose,coffee,,,,not in label set
+98,kahawa matunda meusi,sw,diagnose,coffee,,,,not in label set
+99,bei ya chai,sw,price,,,,,unsupported crop (tea)
+100,cassava leaves yellow,en,diagnose,,,,,unsupported crop

@@ -1,0 +1,81 @@
+{
+  "model": "Qwen3.5-0.8B-pandastic-Q4_K_M.gguf",
+  "threads": 4,
+  "sms": 220,
+  "same": 220,
+  "tokens_total": [
+    7019,
+    4568
+  ],
+  "generation_ms_total": [
+    461213,
+    306456
+  ],
+  "sets": {
+    "dev": {
+      "n": 100,
+      "same_lang_intent_crop_symptom": 100,
+      "tokens_median": [
+        31.0,
+        21.0
+      ],
+      "tokens_total": [
+        3194,
+        2077
+      ],
+      "generation_ms_total": [
+        234335,
+        152775
+      ]
+    },
+    "heldout": {
+      "n": 50,
+      "same_lang_intent_crop_symptom": 50,
+      "tokens_median": [
+        31.5,
+        20.0
+      ],
+      "tokens_total": [
+        1597,
+        1040
+      ],
+      "generation_ms_total": [
+        106643,
+        72142
+      ]
+    },
+    "fresh": {
+      "n": 40,
+      "same_lang_intent_crop_symptom": 40,
+      "tokens_median": [
+        33.0,
+        20.0
+      ],
+      "tokens_total": [
+        1288,
+        835
+      ],
+      "generation_ms_total": [
+        71623,
+        47961
+      ]
+    },
+    "fresh2": {
+      "n": 30,
+      "same_lang_intent_crop_symptom": 30,
+      "tokens_median": [
+        30.0,
+        20.0
+      ],
+      "tokens_total": [
+        940,
+        616
+      ],
+      "generation_ms_total": [
+        48612,
+        33578
+      ]
+    }
+  },
+  "differences": []
+}

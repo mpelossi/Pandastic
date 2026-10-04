@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lang",
+    "intent",
+    "crop",
+    "symptom",
+    "commodity",
+    "offer"
+  ],
+  "properties": {
+    "lang": {
+      "enum": [
+        "sw",
+        "en"
+      ]
+    },
+    "intent": {
+      "enum": [
+        "diagnose",
+        "price",
+        "planting",
+        "help",
+        "other"
+      ]
+    },
+    "crop": {
+      "enum": [
+        "coffee",
+        "maize",
+        "bean",
+        null
+      ]
+    },
+    "symptom": {
+      "enum": [
+        "angular_leaf_spot",
+        "cercospora",
+        "fall_armyworm",
+        "leaf_blight",
+        "leaf_spot",
+        "lethal_necrosis",
+        "miner",
+        "phoma",
+        "rust",
+        "streak_virus",
+        null
+      ]
+    },
+    "commodity": {
+      "enum": [
+        "coffee_arabica_parchment",
+        "coffee_arabica_drugar",
+        "coffee_robusta_kiboko",
+        "coffee_robusta_faq",
+        "maize_grain",
+        "beans_dry",
+        null
+      ]
+    },
+    "offer": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 9999999
+    }
+  }
+}

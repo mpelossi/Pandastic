@@ -1,0 +1,25 @@
+# Both phones side by side: http://localhost:8080 (Basic 5173 left, Capable 5174 right).
+# Keep host port = container port for 5173/5174: each phone's number is its port.
+# The helper's answers come from `brain`: the phone's Java brain with Qwen and the leaf model (desktop/).
+services:
+  brain:
+    build: { context: ., target: brain }
+    image: pandastic-brain
+  phones:
+    build: { context: ., target: web }
+    image: pandastic-phones
+    environment:
+      PANDASTIC_BRAIN_URL: http://brain:8090
+      # On a server: PANDASTIC_PUBLIC_HOST=<its IP or name> docker compose up -d (README.md).
+      PANDASTIC_PUBLIC_HOST: ${PANDASTIC_PUBLIC_HOST:-}
+      # Every SMS from Noor gets an answer; non-farming ones get the menu. "0" = the app's rule (HubPolicy:
+      # personal messages and plain greetings get no reply).
+      PANDASTIC_HUB_ANSWER_ALL: "1"
+      # The app answers a contact at most 10-12 times an hour (airtime); a shared demo gets many more.
+      PANDASTIC_HUB_HOURLY_LIMIT: "1000"
+    depends_on:
+      brain: { condition: service_healthy }
+    ports: ["8080:8080", "5173:5173", "5174:5174"]
+    volumes: [phone-state:/state]
+volumes:
+  phone-state:

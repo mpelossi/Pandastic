@@ -1,0 +1,51 @@
+id,text,lang,intent,crop,symptom,commodity,offer,note
+h1,kahawa imeshambuliwa na kutu nifanye nini,sw,diagnose,coffee,rust,,,
+h2,naona unga wa rangi ya chungwa kwa majani ya kahawa,sw,diagnose,coffee,rust,,,chungwa not machungwa
+h3,majani ya buni yana vumbi la njano,sw,diagnose,coffee,rust,,,vumbi = dust
+h4,coffee leaf has rusty orange patches below,en,diagnose,coffee,rust,,,
+h5,my beans leaves got brown powder,en,diagnose,bean,rust,,,brown powder on beans
+h6,mdudu anatoboa ndani ya jani la kahawa,sw,diagnose,coffee,miner,,,
+h7,coffee leaves have lines inside like tunnels,en,diagnose,coffee,miner,,,
+h8,kahawa ina madoa ya kahawia na katikati kijivu,sw,diagnose,coffee,cercospora,,,
+h9,round brown spots coffee leaf,en,diagnose,coffee,cercospora,,,
+h10,ncha za matawi ya kahawa zimekauka baada ya baridi,sw,diagnose,coffee,phoma,,,
+h11,viwavi jeshi kwenye shamba la mahindi,sw,diagnose,maize,fall_armyworm,,,
+h12,nimeona funza ndani ya mahindi,sw,diagnose,maize,fall_armyworm,,,
+h13,caterpilars eating maize,en,diagnose,maize,fall_armyworm,,,typo caterpilars
+h14,the maize has small worms in the middle,en,diagnose,maize,fall_armyworm,,,
+h15,mistari mieupe na njano kwenye mahindi,sw,diagnose,maize,streak_virus,,,
+h16,maize leaves striped yellow,en,diagnose,maize,streak_virus,,,
+h17,majani ya mahindi yana madoa marefu ya kijivu,sw,diagnose,maize,leaf_blight,,,
+h18,maharage yana madoa yenye pembe,sw,diagnose,bean,angular_leaf_spot,,,
+h19,mimea ya maharage inanyauka,sw,diagnose,bean,,,,wilting
+h20,shamba langu la kahawa lina ugonjwa,sw,diagnose,coffee,,,,
+h21,my maize looks sick,en,diagnose,maize,,,,
+h22,mahindi yamegeuka rangi,sw,diagnose,maize,,,,
+h23,bei ya kahawa wiki hii ni ngapi,sw,price,coffee,,coffee_arabica_parchment,,
+h24,nauza kahawa kesho bei gani,sw,price,coffee,,coffee_arabica_parchment,,
+h25,mtu anataka kununua kahawa yangu kwa 11500,sw,price,coffee,,coffee_arabica_parchment,11500,
+h26,anatoa 13k kwa kilo,sw,price,,,,13000,no crop
+h27,P 1 14500,sw,price,coffee,,coffee_arabica_parchment,14500,
+h28,p1 13000,sw,price,coffee,,coffee_arabica_parchment,13000,no space after p
+h29,P2 1000,sw,price,maize,,maize_grain,1000,no space after p
+h30,bei ya kiboko leo 6000,sw,price,coffee,,coffee_robusta_kiboko,6000,
+h31,FAQ inauzwa shilingi ngapi,sw,price,coffee,,coffee_robusta_faq,,
+h32,mahindi kilo moja ni shilingi ngapi,sw,price,maize,,maize_grain,,
+h33,naweza kuuza maharage kwa 2800,sw,price,bean,,beans_dry,2800,
+h34,what is the price of parchment now,en,price,coffee,,coffee_arabica_parchment,,
+h35,trader says 12000 per kilo for coffee ok?,en,price,coffee,,coffee_arabica_parchment,12000,
+h36,is 900 a good price for maize,en,price,maize,,maize_grain,900,
+h37,beans price,en,price,bean,,beans_dry,,
+h38,coffee 16k,en,price,coffee,,coffee_arabica_parchment,16000,
+h39,ni lini nipande kahawa mpya,sw,planting,coffee,,,,
+h40,mvua imeanza nipande mahindi sasa,sw,planting,maize,,,,
+h41,best time to plant beans,en,planting,bean,,,,
+h42,mambo,sw,help,,,,,
+h43,hi,en,help,,,,,
+h44,nisaidie,sw,help,,,,,
+h45,salaam,sw,help,,,,,greeting not in lexicon
+h46,sawa nimeelewa,sw,other,,,,,
+h47,thanks,en,other,,,,,
+h48,mvua ni nyingi leo,sw,other,,,,,weather chat
+h49,bei ya ndizi,sw,price,,,,,unsupported crop (banana)
+h50,miti ya kahawa inakufa,sw,diagnose,coffee,,,,

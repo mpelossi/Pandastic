@@ -1,0 +1,225 @@
+{
+  "version": "leaf-p2-mix-efficientnetb0-ens3-a16129a8",
+  "stub": false,
+  "arch": "ensemble of 3 x efficientnet_b0.ra_in1k",
+  "input_size": 224,
+  "resize": "direct_bilinear",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "labels": [
+    "coffee_healthy",
+    "coffee_rust",
+    "coffee_miner",
+    "coffee_cercospora",
+    "coffee_phoma",
+    "maize_leaf_blight",
+    "maize_leaf_spot",
+    "bean_healthy",
+    "bean_angular_leaf_spot",
+    "bean_rust",
+    "maize_healthy",
+    "maize_fall_armyworm",
+    "maize_streak_virus",
+    "other"
+  ],
+  "temperature": 0.933,
+  "thresholds": {
+    "min_prob": 0.4,
+    "min_margin": 0.0
+  },
+  "per_class_min_prob": {
+    "coffee_healthy": 0.99,
+    "maize_leaf_blight": 0.82,
+    "maize_leaf_spot": 0.82,
+    "maize_healthy": 0.98,
+    "maize_fall_armyworm": 0.82,
+    "maize_streak_virus": 0.82,
+    "bean_healthy": 0.54
+  },
+  "per_class_min_prob_chosen_on": "calib photos run through the real app on the emulator (WebView 640 px JPEG, Android bitmap resize, ORT), RoCoLe calib plants + CCMT/iBean calib split: each crop's floor is the lowest with its calib answers >= 90% right; each *_healthy floor the lowest with calib 'healthy' precision >= 0.99. Measured by scripts/photo-eval.mjs (O1, 2026-10-04); the eval block below is the training-path measurement with the branch's earlier floors.",
+  "app_check": {
+    "where": "Android emulator (x86_64, API 35), app debug build, scripts/photo-eval.mjs; held-out test photos",
+    "coffee_rocole_test": {
+      "n": 360,
+      "answered": 0.65,
+      "right_when_answered": 0.974,
+      "rust_called_healthy": 0
+    },
+    "maize_ccmt_test": {
+      "n": 336,
+      "answered": 0.792,
+      "right_when_answered": 0.906,
+      "sick_called_healthy": 0
+    },
+    "bean_ibean_test": {
+      "n": 129,
+      "answered": 1.0,
+      "right_when_answered": 0.961,
+      "sick_called_healthy": 1
+    },
+    "non_crop_photos_answered": {
+      "n": 137,
+      "answered": 1
+    },
+    "check_photo_median_ms": 80
+  },
+  "eval": {
+    "test_set": "held-out images from training sources: CCMT (Ghana), iBean (Uganda), JMuBEN (Kenya, lesion close-ups), PlantDoc, RoCoLe (Ecuador, smartphone photos on the plant); + held-out `other`",
+    "n": 1999,
+    "accuracy": 0.954,
+    "coverage_at_threshold": 0.9135,
+    "selective_accuracy": 0.9633,
+    "other_false_accept": 0.0046,
+    "thresholds_met_target": true,
+    "target_selective_accuracy": 0.9,
+    "non_plant_false_accept": 0.0,
+    "non_plant_test_n": 635,
+    "by_crop": {
+      "coffee": {
+        "n_plant": 640,
+        "accuracy": 0.9794,
+        "coverage_at_threshold": 0.9531,
+        "selective_accuracy": 0.982
+      },
+      "maize": {
+        "n_plant": 364,
+        "accuracy": 0.9447,
+        "coverage_at_threshold": 0.8132,
+        "selective_accuracy": 0.9223
+      },
+      "bean": {
+        "n_plant": 129,
+        "accuracy": 0.9849,
+        "coverage_at_threshold": 1.0,
+        "selective_accuracy": 0.969
+      }
+    },
+    "by_source": {
+      "ccmt": {
+        "n_plant": 338,
+        "accuracy": 0.9485,
+        "coverage_at_threshold": 0.8373,
+        "selective_accuracy": 0.9187
+      },
+      "ibean": {
+        "n_plant": 129,
+        "accuracy": 0.9849,
+        "coverage_at_threshold": 1.0,
+        "selective_accuracy": 0.969
+      },
+      "jmuben": {
+        "n_plant": 280,
+        "accuracy": 0.9887,
+        "coverage_at_threshold": 0.9929,
+        "selective_accuracy": 1.0
+      },
+      "plantdoc": {
+        "n_plant": 26,
+        "accuracy": 0.9809,
+        "coverage_at_threshold": 0.5,
+        "selective_accuracy": 1.0
+      },
+      "rocole": {
+        "n_plant": 360,
+        "accuracy": 0.9763,
+        "coverage_at_threshold": 0.9222,
+        "selective_accuracy": 0.9669
+      }
+    },
+    "per_class_min_prob_check": {
+      "label": "coffee_healthy",
+      "target_precision": 0.98,
+      "chosen_on": "RoCoLe calib plants (mix)",
+      "pipeline": "640 px JPEG q0.88 then 224 bilinear, as the app",
+      "before": {
+        "n": 360,
+        "coverage": 0.9861,
+        "selective_accuracy": 0.9549,
+        "coffee_healthy_answered": 206,
+        "coffee_healthy_precision": 0.9417,
+        "wrongly_called_coffee_healthy": {
+          "coffee_rust": 12
+        }
+      },
+      "after": {
+        "n": 360,
+        "coverage": 0.9111,
+        "selective_accuracy": 0.9726,
+        "coffee_healthy_answered": 179,
+        "coffee_healthy_precision": 0.9721,
+        "wrongly_called_coffee_healthy": {
+          "coffee_rust": 5
+        }
+      }
+    },
+    "per_crop_min_prob_check": {
+      "rule": "lowest minimum probability at which the crop's calib answers are >= 90% right",
+      "chosen_on": "calib split (all sources)",
+      "floors": {
+        "coffee": null,
+        "maize": 0.85,
+        "bean": null
+      },
+      "test_by_crop_after": {
+        "coffee": {
+          "n_plant": 640,
+          "accuracy": 0.9794,
+          "coverage_at_threshold": 0.9531,
+          "selective_accuracy": 0.982
+        },
+        "maize": {
+          "n_plant": 364,
+          "accuracy": 0.9447,
+          "coverage_at_threshold": 0.8132,
+          "selective_accuracy": 0.9223
+        },
+        "bean": {
+          "n_plant": 129,
+          "accuracy": 0.9849,
+          "coverage_at_threshold": 1.0,
+          "selective_accuracy": 0.969
+        }
+      },
+      "test_overall_after": {
+        "coverage": 0.9135,
+        "selective_accuracy": 0.9633,
+        "other_false_accept": 0.0046,
+        "answered": 1035,
+        "n_plant": 1133,
+        "n_other": 866
+      }
+    }
+  },
+  "training": {
+    "train_set": "BRACOL (Brazil) + CCMT (Ghana) + iBean (Uganda) + JMuBEN (Kenya, lesion close-ups) + PlantDoc + RoCoLe (Ecuador, smartphone photos on the plant); PlantDoc/iBean other classes as `other`",
+    "members": [
+      "leaf-p2-mix-efficientnetb0-fb0c4d9e",
+      "leaf-p2-mix-efficientnetb0-s14-4fa556df",
+      "leaf-p2-mix-efficientnetb0-s15-17392815"
+    ],
+    "member_temperatures": [
+      0.7054,
+      0.71,
+      0.7038
+    ],
+    "weights": "int8 per output channel (DequantizeLinear), computed in fp32",
+    "trained_at": "2026-10-04T05:57:06+00:00"
+  },
+  "lineage": {
+    "members": [
+      "leaf-p2-mix-efficientnetb0-fb0c4d9e",
+      "leaf-p2-mix-efficientnetb0-s14-4fa556df",
+      "leaf-p2-mix-efficientnetb0-s15-17392815"
+    ],
+    "git_sha": "269c890",
+    "manifest": "manifest-p2-mix-cached.csv"
+  }
+}

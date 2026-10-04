@@ -1,0 +1,201 @@
+lang,term,slot,value,match
+en,p,intent,price,token
+en,price,intent,price,prefix
+en,sell,intent,price,prefix
+en,sold,intent,price,token
+en,buyer,intent,price,prefix
+en,buying,intent,price,token
+en,offer,intent,price,prefix
+en,cost,intent,price,prefix
+en,how much,intent,price,token
+en,ugx,intent,price,token
+en,shilling,intent,price,prefix
+en,shs,intent,price,token
+en,fair,intent,price,token
+en,market,intent,price,prefix
+sw,p,intent,price,token
+sw,bei,intent,price,prefix
+sw,kuuza,intent,price,prefix
+sw,nauza,intent,price,token
+sw,ninauza,intent,price,token
+sw,tunauza,intent,price,token
+sw,kununua,intent,price,prefix
+sw,mnunuzi,intent,price,token
+sw,wanunuzi,intent,price,token
+sw,shilingi,intent,price,prefix
+sw,sh,intent,price,token
+sw,soko,intent,price,prefix
+en,disease,intent,diagnose,prefix
+en,sick,intent,diagnose,prefix
+en,spot,intent,diagnose,prefix
+en,leaf,intent,diagnose,token
+en,leaves,intent,diagnose,token
+en,pest,intent,diagnose,prefix
+en,insect,intent,diagnose,prefix
+en,worm,intent,diagnose,prefix
+en,caterpillar,intent,diagnose,prefix
+en,yellow,intent,diagnose,prefix
+en,brown,intent,diagnose,prefix
+en,holes,intent,diagnose,token
+en,rust,intent,diagnose,prefix
+en,powder,intent,diagnose,prefix
+en,dying,intent,diagnose,token
+en,eaten,intent,diagnose,token
+en,problem,intent,diagnose,prefix
+en,blight,intent,diagnose,prefix
+sw,ugonjwa,intent,diagnose,prefix
+sw,magonjwa,intent,diagnose,prefix
+sw,madoa,intent,diagnose,prefix
+sw,doa,intent,diagnose,token
+sw,majani,intent,diagnose,prefix
+sw,jani,intent,diagnose,token
+sw,wadudu,intent,diagnose,prefix
+sw,mdudu,intent,diagnose,prefix
+sw,viwavi,intent,diagnose,prefix
+sw,kiwavi,intent,diagnose,prefix
+sw,funza,intent,diagnose,prefix
+sw,njano,intent,diagnose,prefix
+sw,kahawia,intent,diagnose,prefix
+sw,matundu,intent,diagnose,prefix
+sw,kutu,intent,diagnose,token
+sw,unga,intent,diagnose,token
+sw,kunyauka,intent,diagnose,prefix
+sw,kukauka,intent,diagnose,prefix
+sw,tatizo,intent,diagnose,prefix
+sw,shida,intent,diagnose,prefix
+en,planting,intent,planting,token
+en,when to plant,intent,planting,substring
+en,sow,intent,planting,prefix
+sw,kupanda,intent,planting,token
+sw,nipande,intent,planting,token
+sw,tupande,intent,planting,token
+en,?,intent,help,token
+en,help,intent,help,prefix
+en,menu,intent,help,token
+en,hello,intent,help,token
+en,hi,intent,help,token
+en,start,intent,help,token
+sw,?,intent,help,token
+sw,msaada,intent,help,prefix
+sw,saidia,intent,help,prefix
+sw,menyu,intent,help,token
+sw,habari,intent,help,token
+sw,jambo,intent,help,token
+sw,mambo,intent,help,token
+en,1,crop,coffee,token
+en,coffee,crop,coffee,prefix
+en,arabica,crop,coffee,prefix
+en,robusta,crop,coffee,prefix
+en,parchment,crop,coffee,prefix
+en,kiboko,crop,coffee,token
+en,faq,crop,coffee,token
+en,drugar,crop,coffee,token
+sw,1,crop,coffee,token
+sw,kahawa,crop,coffee,prefix
+sw,buni,crop,coffee,token
+sw,kiboko,crop,coffee,token
+en,2,crop,maize,token
+en,maize,crop,maize,prefix
+en,corn,crop,maize,token
+en,cob,crop,maize,prefix
+sw,2,crop,maize,token
+sw,mahindi,crop,maize,prefix
+sw,gunzi,crop,maize,prefix
+sw,magunzi,crop,maize,prefix
+en,3,crop,bean,token
+en,bean,crop,bean,prefix
+sw,3,crop,bean,token
+sw,maharage,crop,bean,prefix
+sw,maharagwe,crop,bean,prefix
+en,parchment,commodity,coffee_arabica_parchment,prefix
+en,arabica,commodity,coffee_arabica_parchment,prefix
+en,drugar,commodity,coffee_arabica_drugar,token
+en,kiboko,commodity,coffee_robusta_kiboko,token
+en,robusta,commodity,coffee_robusta_kiboko,prefix
+en,faq,commodity,coffee_robusta_faq,token
+sw,kiboko,commodity,coffee_robusta_kiboko,token
+en,rust,symptom,rust,prefix
+en,orange powder,symptom,rust,substring
+en,yellow powder,symptom,rust,substring
+en,powder,symptom,rust,prefix
+sw,kutu,symptom,rust,token
+sw,unga wa njano,symptom,rust,substring
+sw,unga wa machungwa,symptom,rust,substring
+sw,unga,symptom,rust,token
+en,miner,symptom,miner,prefix
+en,tunnel,symptom,miner,prefix
+en,trails,symptom,miner,token
+en,blister,symptom,miner,prefix
+sw,mchimba,symptom,miner,prefix
+sw,michirizi,symptom,miner,prefix
+en,eye spot,symptom,cercospora,substring
+en,brown eye,symptom,cercospora,substring
+en,grey centre,symptom,cercospora,substring
+en,gray center,symptom,cercospora,substring
+sw,jicho,symptom,cercospora,prefix
+sw,madoa ya kahawia,symptom,cercospora,substring
+en,phoma,symptom,phoma,prefix
+en,cold wind,symptom,phoma,substring
+en,dieback,symptom,phoma,prefix
+en,die back,symptom,phoma,substring
+sw,upepo baridi,symptom,phoma,substring
+sw,madoa meusi,symptom,phoma,substring
+en,armyworm,symptom,fall_armyworm,prefix
+en,army worm,symptom,fall_armyworm,substring
+en,caterpillar,symptom,fall_armyworm,prefix
+en,worm,symptom,fall_armyworm,prefix
+sw,viwavijeshi,symptom,fall_armyworm,prefix
+sw,viwavi jeshi,symptom,fall_armyworm,substring
+sw,kiwavi,symptom,fall_armyworm,prefix
+sw,viwavi,symptom,fall_armyworm,prefix
+sw,funza,symptom,fall_armyworm,prefix
+en,blight,symptom,leaf_blight,prefix
+sw,ukungu,symptom,leaf_blight,prefix
+en,angular,symptom,angular_leaf_spot,prefix
+sw,pembe,symptom,angular_leaf_spot,token
+en,streak,symptom,streak_virus,prefix
+en,stripes,symptom,streak_virus,prefix
+sw,mistari,symptom,streak_virus,prefix
+en,necrosis,symptom,lethal_necrosis,prefix
+en,mln,symptom,lethal_necrosis,token
+en,wrong,intent,diagnose,token
+en,black,intent,diagnose,prefix
+en,falling,intent,diagnose,token
+sw,kauka,intent,diagnose,substring
+sw,kufa,intent,diagnose,token
+sw,meusi,intent,diagnose,prefix
+en,thank,intent,other,prefix
+en,ok,intent,other,token
+sw,asante,intent,other,prefix
+sw,kahwa,crop,coffee,prefix
+sw,mahind,crop,maize,prefix
+en,orange,symptom,rust,prefix
+sw,machungwa,symptom,rust,prefix
+sw,njia nyeupe,symptom,miner,substring
+en,white trails,symptom,miner,substring
+en,holes,symptom,fall_armyworm,token
+sw,matundu,symptom,fall_armyworm,prefix
+en,plant,intent,planting,token
+sw,otesha,intent,planting,substring
+sw,miche,intent,planting,token
+sw,meliwa,intent,diagnose,substring
+sw,haribika,intent,diagnose,substring
+en,not doing well,intent,diagnose,substring
+en,how does this,intent,help,substring
+en,how to use,intent,help,substring
+sw,mistari,symptom,miner,prefix
+sw,michirizi,symptom,streak_virus,prefix
+sw,nakufa,intent,diagnose,substring
+sw,mekufa,intent,diagnose,substring
+sw,emmwanyi,crop,coffee,prefix
+en,emmwanyi,crop,coffee,prefix
+sw,emmwaanyi,crop,coffee,prefix
+en,emmwaanyi,crop,coffee,prefix
+sw,mmwanyi,crop,coffee,prefix
+en,mmwanyi,crop,coffee,prefix
+sw,kasooli,crop,maize,prefix
+en,kasooli,crop,maize,prefix
+sw,ebijanjaalo,crop,bean,prefix
+en,ebijanjaalo,crop,bean,prefix
+sw,bijanjaalo,crop,bean,prefix
+en,bijanjaalo,crop,bean,prefix

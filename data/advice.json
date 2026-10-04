@@ -1,0 +1,158 @@
+[
+ {
+  "label": "coffee_healthy",
+  "source_id": "plantwise-rw014-coffee-rust",
+  "en": {
+   "sms": "No disease seen on this leaf. Keep checking under the leaves every week.",
+   "long": "No disease was found on this leaf. Leaf rust shows first as yellow-orange powder under the leaves, so turn a few leaves over on each tree every week. Keep the recommended spacing and prune to keep the bush open."
+  },
+  "sw": {
+   "sms": "Hakuna ugonjwa kwenye jani hili. Endelea kukagua chini ya majani kila wiki.",
+   "long": "Hakuna ugonjwa ulioonekana kwenye jani hili. Kutu ya majani huanza kama unga wa njano-machungwa chini ya majani, kwa hiyo geuza majani machache kwenye kila mti kila wiki. Acha nafasi inayopendekezwa kati ya miti na pogoa ili mti ubaki wazi."
+  }
+ },
+ {
+  "label": "coffee_rust",
+  "source_id": "plantwise-rw014-coffee-rust",
+  "en": {
+   "sms": "Leaf rust. Prune to open the bush and keep tree spacing. Spray copper under leaves only if the officer agrees.",
+   "long": "Coffee leaf rust: yellow powdery spots under the leaves; leaves fall and branches can die. 1) Keep the recommended spacing and prune to open the bush, so leaves dry and sprays reach inside. 2) Sprays are costly: they are usually needed only from about 2 spots per leaf. 3) Copper oxychloride prevents rust; a systemic fungicide is used once rust is established. Spray the underside of the leaves. 4) Plant resistant varieties when available. Ask the extension officer before spraying, wear protection and follow the label."
+  },
+  "sw": {
+   "sms": "Kutu ya majani. Pogoa kufungua mti na acha nafasi kati ya miti. Nyunyiza shaba chini ya majani tu afisa akikubali.",
+   "long": "Kutu ya majani ya kahawa: madoa ya unga wa njano chini ya majani; majani huanguka na matawi yanaweza kufa. 1) Acha nafasi inayopendekezwa na pogoa kufungua mti, ili majani yakauke na dawa ifike ndani. 2) Dawa ni ghali: kwa kawaida huhitajika kuanzia madoa 2 kwa jani. 3) Copper oxychloride huzuia kutu; dawa ya kimfumo hutumika kutu ikishaingia. Nyunyiza chini ya majani. 4) Panda aina sugu zikipatikana. Uliza afisa ugani kabla ya kunyunyiza, vaa kinga na fuata maelekezo."
+  }
+ },
+ {
+  "label": "coffee_miner",
+  "source_id": "insects-2021-coffee-leaf-miner",
+  "en": {
+   "sms": "Leaf miner. Keep shade and nearby trees; avoid broad insecticides that kill the wasps and ants eating the miners.",
+   "long": "Coffee leaf miner: small caterpillars feed inside the leaf, leaving brown dead patches; heavy attacks make leaves fall. 1) Wasps and ants are its main natural enemies. Diverse farms with shade trees and nearby forest have more of them. 2) Avoid broad-spectrum insecticides: they also kill these natural enemies. 3) Ask the extension officer before using any spray."
+  },
+  "sw": {
+   "sms": "Mchimba majani. Acha miti ya kivuli; epuka dawa kali za wadudu zinazoua nyigu na siafu wanaokula wadudu hawa.",
+   "long": "Mchimba majani ya kahawa: viwavi wadogo hula ndani ya jani na kuacha mabaka ya kahawia yaliyokufa; mashambulizi makubwa huangusha majani. 1) Nyigu na siafu ndio maadui wake wakuu wa asili. Mashamba yenye miti ya kivuli na msitu karibu yana wengi zaidi. 2) Epuka dawa kali za wadudu: huua pia maadui hawa wa asili. 3) Uliza afisa ugani kabla ya kutumia dawa yoyote."
+  }
+ },
+ {
+  "label": "coffee_cercospora",
+  "source_id": "pppw-142-coffee-brown-eye-spot",
+  "en": {
+   "sms": "Brown eye spot. Feed trees (N and K), keep 35-65% shade, prune for air and take prunings out of the field.",
+   "long": "Brown eye spot (Cercospora): round brown spots with a grey centre and a yellow ring; berries can get brown patches. It is worst on trees with poor nutrition or too little shade. 1) Fertilise, especially nitrogen and potassium, and drain wet land. 2) Keep the recommended spacing and 35-65% shade. 3) Prune to let air move. 4) Take pruning debris out of the field. 5) Improve nutrition and shade before thinking of sprays; ask the extension officer first."
+  },
+  "sw": {
+   "sms": "Doa la jicho la kahawia. Weka mbolea (N na K), kivuli 35-65%, pogoa kupitisha hewa, toa matawi shambani.",
+   "long": "Doa la jicho la kahawia (Cercospora): madoa ya mviringo ya kahawia yenye kati ya kijivu na pete ya njano; buni zinaweza kupata mabaka ya kahawia. Huwa mbaya zaidi kwa miti yenye lishe duni au kivuli kidogo. 1) Weka mbolea, hasa naitrojeni na potasiamu, na ondoa maji yaliyotuama. 2) Acha nafasi inayopendekezwa na kivuli cha 35-65%. 3) Pogoa ili hewa ipite. 4) Toa matawi yaliyopogolewa shambani. 5) Boresha lishe na kivuli kabla ya kufikiria dawa; uliza afisa ugani kwanza."
+  }
+ },
+ {
+  "label": "coffee_phoma",
+  "source_id": "cultivar-2024-coffee-phoma",
+  "en": {
+   "sms": "Phoma leaf spot (cold wind and mist). Plant windbreaks and use balanced fertiliser. Spray only if the officer agrees.",
+   "long": "Phoma leaf spot: dark round spots on leaves, curled and cracked young leaves, and dark sunken patches on branches; leaves and flower buds can be lost. It is worst above 900 m with cold wind, mist and temperatures below 20 C. 1) Where wind is constant, plant windbreaks. 2) Protect nurseries from cold wind and keep them well drained. 3) Use balanced fertiliser so trees resist stress. 4) Fungicides are used to prevent it before the cold season: ask the extension officer first."
+  },
+  "sw": {
+   "sms": "Doa la Phoma (upepo baridi na ukungu). Panda miti ya kuzuia upepo, tumia mbolea kamili. Dawa tu afisa akikubali.",
+   "long": "Doa la Phoma: madoa meusi ya mviringo kwenye majani, majani machanga yaliyojikunja na kupasuka, na mabaka meusi yaliyozama kwenye matawi; majani na vichipukizi vya maua vinaweza kupotea. Huwa mbaya zaidi juu ya mita 900 penye upepo baridi, ukungu na joto chini ya nyuzi 20. 1) Penye upepo wa kudumu, panda miti ya kuzuia upepo. 2) Linda vitalu dhidi ya upepo baridi na hakikisha maji yanatoka vizuri. 3) Tumia mbolea kamili ili miti istahimili. 4) Dawa za ukungu hutumika kuzuia kabla ya msimu wa baridi: uliza afisa ugani kwanza."
+  }
+ },
+ {
+  "label": "maize_healthy",
+  "source_id": "pppw-401-fall-armyworm",
+  "en": {
+   "sms": "No pest seen on this leaf. Walk the maize at least once a week and look for eaten leaves.",
+   "long": "No pest was found on this leaf. Fall armyworm can arrive at any time: walk through the maize at least once a week and look for 'windows' and holes in young leaves and for egg masses under lower leaves."
+  },
+  "sw": {
+   "sms": "Hakuna mdudu kwenye jani hili. Kagua mahindi angalau mara moja kwa wiki, angalia majani yaliyoliwa.",
+   "long": "Hakuna mdudu aliyeonekana kwenye jani hili. Viwavijeshi wanaweza kufika wakati wowote: tembea shambani angalau mara moja kwa wiki na angalia 'madirisha' na matundu kwenye majani machanga na mayai chini ya majani ya chini."
+  }
+ },
+ {
+  "label": "maize_fall_armyworm",
+  "source_id": "pppw-401-fall-armyworm",
+  "en": {
+   "sms": "Fall armyworm. Check weekly, crush egg masses, pick off larvae, put sand or ash in the funnel. Sprays rarely pay.",
+   "long": "Fall armyworm: caterpillars eat 'windows' and holes in leaves and bore into cobs. 1) Visit the crop at least once a week. 2) Crush egg masses by hand; remove larvae by hand on small plots. 3) On small plots, put sand or ash in the funnel (whorl). 4) Plant early, all at the same time as neighbours, and use good seed. 5) Push-pull: napier or Brachiaria grass around, Desmodium between rows. 6) In Africa, insecticides rarely pay for smallholders; ask the extension officer before buying any."
+  },
+  "sw": {
+   "sms": "Viwavijeshi. Kagua kila wiki, ponda mayai, ondoa viwavi kwa mkono, weka mchanga au majivu kwenye kikonyo.",
+   "long": "Viwavijeshi: viwavi hula 'madirisha' na matundu kwenye majani na kutoboa magunzi. 1) Tembelea shamba angalau mara moja kwa wiki. 2) Ponda mayai kwa mkono; ondoa viwavi kwa mkono kwenye shamba dogo. 3) Kwenye shamba dogo, weka mchanga au majivu kwenye kikonyo. 4) Panda mapema, wote kwa wakati mmoja na majirani, tumia mbegu bora. 5) Sukuma-vuta: nyasi ya napier au Brachiaria kuzunguka, Desmodium kati ya mistari. 6) Afrika, dawa mara nyingi hazilipi kwa wakulima wadogo; uliza afisa ugani kabla ya kununua."
+  }
+ },
+ {
+  "label": "maize_leaf_blight",
+  "source_id": "pppw-226-maize-northern-leaf-blight",
+  "en": {
+   "sms": "Northern leaf blight. Use resistant seed next season, rotate with non-grass crops, bury crop remains.",
+   "long": "Northern leaf blight: long oval grey-brown spots on the leaves, starting low on the plant; leaves dry out. 1) Choose resistant hybrid seed: the most important step. 2) Do not over-supply nitrogen; keep phosphorus and potassium right. 3) Control grass weeds. 4) After harvest, burn or bury crop remains and rotate with non-grass crops. Sprays should not be needed and rarely pay."
+  },
+  "sw": {
+   "sms": "Ukungu wa majani. Panda mbegu sugu msimu ujao, badilisha na zao lisilo nyasi, fukia mabaki ya zao.",
+   "long": "Ukungu wa majani wa kaskazini: madoa marefu ya kijivu-kahawia kwenye majani, kuanzia chini ya mmea; majani hukauka. 1) Chagua mbegu chotara sugu: hatua muhimu zaidi. 2) Usizidishe naitrojeni; weka fosforasi na potasiamu sawa. 3) Dhibiti magugu ya nyasi. 4) Baada ya mavuno, choma au fukia mabaki na badilisha na zao lisilo la jamii ya nyasi. Dawa hazipaswi kuhitajika na mara nyingi hazilipi."
+  }
+ },
+ {
+  "label": "maize_streak_virus",
+  "source_id": "plantwise-ke015-maize-streak-virus",
+  "en": {
+   "sms": "Maize streak virus. No spray cures it. Pull out sick young plants early. Plant a resistant variety next season.",
+   "long": "Maize streak virus: yellow and light green streaks along the leaf veins; plants attacked early stay small and yield little. It is spread by a small brownish-white leafhopper; the more leafhoppers, the faster it spreads. 1) Walk the field often while the maize is small. 2) Pull out infected plants as soon as you see them and put them in a sack, so the insects do not move to healthy plants; they can be fed to animals. 3) If it was bad, plant a resistant variety next season: ask the extension officer or seed seller which ones. No spray cures the virus."
+  },
+  "sw": {
+   "sms": "Virusi vya michirizi. Hakuna dawa ya kuponya. Ng'oa mimea michanga iliyougua mapema. Panda aina sugu msimu ujao.",
+   "long": "Virusi vya michirizi ya mahindi: michirizi ya njano na kijani hafifu kando ya mishipa ya jani; mimea inayoshambuliwa mapema hubaki midogo na kuzaa kidogo. Huenezwa na mdudu mdogo wa kahawia-mweupe anayeruka (leafhopper); wakiwa wengi, ugonjwa huenea haraka. 1) Kagua shamba mara kwa mara mahindi yakiwa madogo. 2) Ng'oa mimea iliyougua mara unapoiona na uiweke kwenye gunia, ili wadudu wasihamie mimea yenye afya; inaweza kulishwa mifugo. 3) Ikiwa ulikuwa mbaya, panda aina sugu msimu ujao: uliza afisa ugani au muuzaji wa mbegu. Hakuna dawa inayoponya virusi."
+  }
+ },
+ {
+  "label": "maize_leaf_spot",
+  "source_id": "plantwise-zm013-maize-grey-leaf-spot",
+  "en": {
+   "sms": "Grey leaf spot. Rotate maize with beans or groundnuts, use resistant seed, plant at the start of the rains.",
+   "long": "Grey leaf spot: grey rectangular spots along the leaf veins that can join and turn the leaf brown, starting on the lower leaves. It survives on maize residue left on the soil. (Many thin yellow streaks along the veins are streak virus, not this.) 1) Rotate maize with beans, cowpeas, groundnuts or another cereal. 2) Use resistant varieties: check the seed supplier's brochure. 3) Plant on time, at the start of the rains. 4) Fungicides are an option once spots appear: ask the extension officer first."
+  },
+  "sw": {
+   "sms": "Madoa ya kijivu. Badilisha mahindi na maharage au karanga, tumia mbegu sugu, panda mwanzo wa mvua.",
+   "long": "Madoa ya kijivu ya mahindi: madoa ya kijivu ya mstatili kando ya mishipa ya jani yanayoweza kuungana na kufanya jani kuwa kahawia, kuanzia majani ya chini. Huishi kwenye mabaki ya mahindi yaliyoachwa shambani. (Michirizi mingi myembamba ya njano kando ya mishipa ni virusi vya michirizi, si huu.) 1) Badilisha mahindi na maharage, kunde, karanga au nafaka nyingine. 2) Tumia aina sugu: angalia kijitabu cha muuzaji wa mbegu. 3) Panda kwa wakati, mwanzo wa mvua. 4) Dawa za ukungu zinaweza kutumika madoa yakionekana: uliza afisa ugani kwanza."
+  }
+ },
+ {
+  "label": "bean_healthy",
+  "source_id": "pppw-217-bean-rust",
+  "en": {
+   "sms": "No disease seen on this leaf. Keep checking the beans every week.",
+   "long": "No disease was found on this leaf. Check the beans every week: bean rust starts as small pale spots with yellow rings that later burst into reddish-brown powder."
+  },
+  "sw": {
+   "sms": "Hakuna ugonjwa kwenye jani hili. Endelea kukagua maharage kila wiki.",
+   "long": "Hakuna ugonjwa ulioonekana kwenye jani hili. Kagua maharage kila wiki: kutu ya maharage huanza kama madoa madogo yenye pete za njano ambayo baadaye hupasuka na kutoa unga wa kahawia-nyekundu."
+  }
+ },
+ {
+  "label": "bean_rust",
+  "source_id": "pppw-217-bean-rust",
+  "en": {
+   "sms": "Bean rust. Mix beans with maize, rotate for 2 years, do not plant new beans next to old ones, bury remains.",
+   "long": "Bean rust: small pale spots with yellow rings that burst into reddish-brown powder; spread by wind. 1) Plant beans mixed at random with maize. 2) Do not plant beans after beans: rotate for at least 2 years. 3) Do not plant a new bean crop while the old one is still in the ground. 4) After harvest, burn or bury the crop remains. 5) Ask for resistant varieties. Sprays start when spots first appear; ask the extension officer first."
+  },
+  "sw": {
+   "sms": "Kutu ya maharage. Changanya maharage na mahindi, badilisha zao miaka 2, usipande mapya karibu na ya zamani.",
+   "long": "Kutu ya maharage: madoa madogo yenye pete za njano ambayo hupasuka na kutoa unga wa kahawia-nyekundu; huenezwa na upepo. 1) Panda maharage yakichanganyika na mahindi. 2) Usipande maharage baada ya maharage: badilisha zao angalau miaka 2. 3) Usipande maharage mapya wakati ya zamani bado yapo shambani. 4) Baada ya mavuno, choma au fukia mabaki. 5) Uliza aina sugu. Dawa huanza madoa yanapoonekana mara ya kwanza; uliza afisa ugani kwanza."
+  }
+ },
+ {
+  "label": "bean_angular_leaf_spot",
+  "source_id": "pppw-216-bean-angular-leaf-spot",
+  "en": {
+   "sms": "Angular leaf spot. Use clean certified seed, rotate for 2 years, collect and bury crop remains after harvest.",
+   "long": "Angular leaf spot: small grey-brown angular spots between the veins, often with a yellow ring; dark sunken spots on pods; seed gets infected. 1) Use seed certified free of the disease. 2) Do not plant beans after beans: rotate for at least 2 years. 3) After harvest, collect and burn or bury crop remains. 4) Ask for resistant varieties. If a spray is needed, ask the extension officer first."
+  },
+  "sw": {
+   "sms": "Madoa ya pembe. Tumia mbegu safi zilizothibitishwa, badilisha zao miaka 2, fukia mabaki baada ya mavuno.",
+   "long": "Madoa ya pembe: madoa madogo ya kijivu-kahawia yenye pembe kati ya mishipa ya jani, mara nyingi na pete ya njano; madoa meusi yaliyozama kwenye maganda; mbegu huambukizwa. 1) Tumia mbegu zilizothibitishwa kuwa safi. 2) Usipande maharage baada ya maharage: badilisha zao angalau miaka 2. 3) Baada ya mavuno, kusanya na choma au fukia mabaki. 4) Uliza aina sugu. Dawa ikihitajika, uliza afisa ugani kwanza."
+  }
+ }
+]

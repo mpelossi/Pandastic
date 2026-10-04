@@ -1,0 +1,15 @@
+.git
+**/node_modules
+**/build
+**/.cxx
+**/.gradle
+android/local.properties
+frontend/dist
+frontend/.local-phones
+ml/.venv
+ml/artifacts
+data/raw
+bin
+out
+**/*.gguf
+**/__pycache__

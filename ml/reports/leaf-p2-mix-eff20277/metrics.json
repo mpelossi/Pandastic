@@ -1,0 +1,305 @@
+{
+  "eval": {
+    "test_set": "held-out images from training sources: CCMT (Ghana), iBean (Uganda), JMuBEN (Kenya, lesion close-ups), PlantDoc, RoCoLe (Ecuador, smartphone photos on the plant); + held-out `other`",
+    "n": 1364,
+    "accuracy": 0.9216,
+    "coverage_at_threshold": 0.9462,
+    "selective_accuracy": 0.9422,
+    "other_false_accept": 0.0476,
+    "thresholds_met_target": true,
+    "target_selective_accuracy": 0.9,
+    "by_crop": {
+      "coffee": {
+        "n_plant": 640,
+        "accuracy": 0.946,
+        "coverage_at_threshold": 0.9625,
+        "selective_accuracy": 0.9675
+      },
+      "maize": {
+        "n_plant": 364,
+        "accuracy": 0.884,
+        "coverage_at_threshold": 0.9066,
+        "selective_accuracy": 0.8909
+      },
+      "bean": {
+        "n_plant": 129,
+        "accuracy": 0.9361,
+        "coverage_at_threshold": 0.9767,
+        "selective_accuracy": 0.9524
+      }
+    },
+    "by_source": {
+      "ccmt": {
+        "n_plant": 338,
+        "accuracy": 0.8893,
+        "coverage_at_threshold": 0.9172,
+        "selective_accuracy": 0.8871
+      },
+      "ibean": {
+        "n_plant": 129,
+        "accuracy": 0.9361,
+        "coverage_at_threshold": 0.9767,
+        "selective_accuracy": 0.9524
+      },
+      "jmuben": {
+        "n_plant": 280,
+        "accuracy": 0.9589,
+        "coverage_at_threshold": 0.975,
+        "selective_accuracy": 0.9963
+      },
+      "plantdoc": {
+        "n_plant": 26,
+        "accuracy": 0.9144,
+        "coverage_at_threshold": 0.7692,
+        "selective_accuracy": 0.95
+      },
+      "rocole": {
+        "n_plant": 360,
+        "accuracy": 0.9289,
+        "coverage_at_threshold": 0.9528,
+        "selective_accuracy": 0.9446
+      }
+    }
+  },
+  "thresholds_calib": {
+    "coverage": 0.9258741258741259,
+    "selective_accuracy": 0.9018126888217523,
+    "other_false_accept": 0.025974025974025976,
+    "answered": 662,
+    "n_plant": 715,
+    "n_other": 231,
+    "min_prob": 0.4,
+    "min_margin": 0.3,
+    "met_target": true
+  },
+  "per_class_test": {
+    "coffee_healthy": {
+      "support": 202,
+      "recall": 0.9801980198019802,
+      "precision": 0.9
+    },
+    "coffee_rust": {
+      "support": 288,
+      "recall": 0.9201388888888888,
+      "precision": 0.977859778597786
+    },
+    "coffee_miner": {
+      "support": 93,
+      "recall": 0.989247311827957,
+      "precision": 0.9787234042553191
+    },
+    "coffee_cercospora": {
+      "support": 18,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "coffee_phoma": {
+      "support": 39,
+      "recall": 0.9230769230769231,
+      "precision": 0.972972972972973
+    },
+    "maize_leaf_blight": {
+      "support": 117,
+      "recall": 0.8632478632478633,
+      "precision": 0.8347107438016529
+    },
+    "maize_leaf_spot": {
+      "support": 103,
+      "recall": 0.7961165048543689,
+      "precision": 0.8282828282828283
+    },
+    "bean_healthy": {
+      "support": 42,
+      "recall": 1.0,
+      "precision": 0.9545454545454546
+    },
+    "bean_angular_leaf_spot": {
+      "support": 44,
+      "recall": 0.9318181818181818,
+      "precision": 0.8913043478260869
+    },
+    "bean_rust": {
+      "support": 43,
+      "recall": 0.9069767441860465,
+      "precision": 0.8478260869565217
+    },
+    "maize_healthy": {
+      "support": 19,
+      "recall": 1.0,
+      "precision": 0.9047619047619048
+    },
+    "maize_fall_armyworm": {
+      "support": 29,
+      "recall": 0.8275862068965517,
+      "precision": 0.8275862068965517
+    },
+    "maize_streak_virus": {
+      "support": 96,
+      "recall": 0.8854166666666666,
+      "precision": 0.85
+    },
+    "other": {
+      "support": 231,
+      "recall": 0.9307359307359307,
+      "precision": 0.9862385321100917
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.219940234975117,
+      "val_acc": 0.695652186870575,
+      "seconds": 22.530799627304077
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1311564111128085,
+      "val_acc": 0.7776866555213928,
+      "seconds": 12.419732332229614
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9766255069554337,
+      "val_acc": 0.7957342267036438,
+      "seconds": 11.806372165679932
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.9054967150455568,
+      "val_acc": 0.8269072771072388,
+      "seconds": 12.167851448059082
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.8604486768807822,
+      "val_acc": 0.8400328159332275,
+      "seconds": 12.727113246917725
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.8242354029562415,
+      "val_acc": 0.8646431565284729,
+      "seconds": 12.736873626708984
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.779451795225221,
+      "val_acc": 0.8876128196716309,
+      "seconds": 12.039495706558228
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.7544716887357759,
+      "val_acc": 0.8785890340805054,
+      "seconds": 12.30600619316101
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.7364174161500078,
+      "val_acc": 0.9064807295799255,
+      "seconds": 12.426433563232422
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.7118072640605089,
+      "val_acc": 0.910582423210144,
+      "seconds": 12.055612087249756
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.7180465789345222,
+      "val_acc": 0.910582423210144,
+      "seconds": 12.054054737091064
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.703772848699151,
+      "val_acc": 0.9089417457580566,
+      "seconds": 12.452758073806763
+    }
+  ],
+  "manifest": {
+    "counts": {
+      "calib/bean_angular_leaf_spot": 43,
+      "calib/bean_healthy": 43,
+      "calib/bean_rust": 44,
+      "calib/coffee_healthy": 113,
+      "calib/coffee_rust": 98,
+      "calib/maize_fall_armyworm": 28,
+      "calib/maize_healthy": 21,
+      "calib/maize_leaf_blight": 120,
+      "calib/maize_leaf_spot": 108,
+      "calib/maize_streak_virus": 98,
+      "calib/other": 231,
+      "test/bean_angular_leaf_spot": 44,
+      "test/bean_healthy": 42,
+      "test/bean_rust": 43,
+      "test/coffee_cercospora": 18,
+      "test/coffee_healthy": 202,
+      "test/coffee_miner": 93,
+      "test/coffee_phoma": 39,
+      "test/coffee_rust": 288,
+      "test/maize_fall_armyworm": 29,
+      "test/maize_healthy": 20,
+      "test/maize_leaf_blight": 119,
+      "test/maize_leaf_spot": 103,
+      "test/maize_streak_virus": 98,
+      "test/other": 231,
+      "train/bean_angular_leaf_spot": 302,
+      "train/bean_healthy": 299,
+      "train/bean_rust": 305,
+      "train/coffee_cercospora": 180,
+      "train/coffee_healthy": 531,
+      "train/coffee_miner": 543,
+      "train/coffee_phoma": 433,
+      "train/coffee_rust": 1120,
+      "train/maize_fall_armyworm": 200,
+      "train/maize_healthy": 146,
+      "train/maize_leaf_blight": 834,
+      "train/maize_leaf_spot": 747,
+      "train/maize_streak_virus": 685,
+      "train/other": 1625,
+      "val/bean_angular_leaf_spot": 43,
+      "val/bean_healthy": 43,
+      "val/bean_rust": 44,
+      "val/coffee_cercospora": 29,
+      "val/coffee_healthy": 103,
+      "val/coffee_miner": 85,
+      "val/coffee_phoma": 72,
+      "val/coffee_rust": 193,
+      "val/maize_fall_armyworm": 28,
+      "val/maize_healthy": 21,
+      "val/maize_leaf_blight": 119,
+      "val/maize_leaf_spot": 110,
+      "val/maize_streak_virus": 98,
+      "val/other": 232
+    },
+    "by_source": {
+      "calib/ccmt": 349,
+      "calib/ibean": 130,
+      "calib/plantdoc": 257,
+      "calib/rocole": 211,
+      "test/ccmt": 343,
+      "test/ibean": 129,
+      "test/jmuben": 280,
+      "test/plantdoc": 257,
+      "test/rocole": 360,
+      "train/bracol": 1142,
+      "train/ccmt": 2430,
+      "train/ibean": 906,
+      "train/jmuben": 983,
+      "train/plantdoc": 1807,
+      "train/rocole": 682,
+      "val/bracol": 201,
+      "val/ccmt": 350,
+      "val/ibean": 130,
+      "val/jmuben": 141,
+      "val/plantdoc": 258,
+      "val/rocole": 140
+    },
+    "jmuben_raw": 58550,
+    "jmuben_unique": 1404,
+    "coffee_split": "mix",
+    "labels_without_training_data": []
+  }
+}

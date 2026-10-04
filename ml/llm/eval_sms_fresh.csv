@@ -1,0 +1,41 @@
+id,text,lang,intent,crop,symptom,commodity,offer,note
+f1,"Habari, naomba ushauri. Kahawa yangu majani yamejaa unga wa rangi ya machungwa upande wa chini",sw,diagnose,coffee,rust,,,"polite opening, long"
+f2,hello sir my coffee trees leaves have orange dust underneath what can i spray,en,diagnose,coffee,rust,,,
+f3,kuna mistari myeupe inayopinda ndani ya majani ya kahawa kama mtu ameandika,sw,diagnose,coffee,miner,,,winding white lines
+f4,coffee leaf got brown circles with grey middle like an eye,en,diagnose,coffee,cercospora,,,
+f5,"Mahindi yangu yameliwa usiku, kuna kinyesi kama machujo ndani ya kitovu",sw,diagnose,maize,fall_armyworm,,,frass like sawdust in the whorl
+f6,worms inside the maize funnel and the leaves have ragged holes,en,diagnose,maize,fall_armyworm,,,
+f7,mahindi machanga yana michirizi myembamba ya njano kwa urefu wa jani,sw,diagnose,maize,streak_virus,,,
+f8,corn leaves have long cigar shaped grey brown lesions,en,diagnose,maize,leaf_blight,,,
+f9,maharagwe yangu majani yana vidoa vya kahawia vyenye kona kona,sw,diagnose,bean,angular_leaf_spot,,,kona = corner
+f10,bean leaves rusty red pustules on underside,en,diagnose,bean,rust,,,
+f11,Shamba la mahindi limeharibika sana mwaka huu sijui ni nini,sw,diagnose,maize,,,,vague
+f12,my coffee is not doing well this season,en,diagnose,coffee,,,,vague
+f13,mihogo yangu ina majani yaliyojikunja,sw,diagnose,,,,,"cassava, unsupported crop"
+f14,tomato leaves have black spots,en,diagnose,,,,,"tomato, unsupported crop"
+f15,buni zinakauka kuanzia juu ya matawi baada ya baridi kali,sw,diagnose,coffee,phoma,,,dieback after cold
+f16,msee kahawa yangu iko na shida ya majani,sw,diagnose,coffee,,,,Sheng
+f17,Bei ya kahawa parchment pale Kapchorwa ni kiasi gani leo?,sw,price,coffee,,coffee_arabica_parchment,,
+f18,"broker amekuja anataka kilo ya kahawa kwa 12,500/=",sw,price,coffee,,coffee_arabica_parchment,12500,"code-switch, /= suffix"
+f19,"a buyer came offering UGX 11000 a kilo for my arabica, should i sell",en,price,coffee,,coffee_arabica_parchment,11000,
+f20,"kiboko wanalipa shs 5800 hapa kijijini, ni sawa?",sw,price,coffee,,coffee_robusta_kiboko,5800,
+f21,mahindi wananunua 850 kwa kilo,sw,price,maize,,maize_grain,850,
+f22,"maize going for 1,050 per kg at the market is that low",en,price,maize,,maize_grain,1050,
+f23,maharage elfu tatu na mia tano kwa kilo ni bei nzuri?,sw,price,bean,,beans_dry,3500,number words
+f24,how much are beans selling for in Mbale,en,price,bean,,beans_dry,,
+f25,nimepewa elfu kumi na nne kwa kilo ya kahawa,sw,price,coffee,,coffee_arabica_parchment,14000,number words
+f26,P 2 950,sw,price,maize,,maize_grain,950,menu code
+f27,price of drugar this month?,en,price,coffee,,coffee_arabica_drugar,,
+f28,Sokoni bei ya mahindi imeshuka?,sw,price,maize,,maize_grain,,
+f29,mtu ananiambia 2500 kwa maharagwe,sw,price,bean,,beans_dry,2500,
+f30,bei ya chai leo,sw,price,,,,,"tea, unsupported crop"
+f31,Ni wakati gani mzuri wa kupanda maharage msimu huu wa mvua?,sw,planting,bean,,,,
+f32,should i plant my maize before the rains start,en,planting,maize,,,,
+f33,nataka kuotesha miche ya kahawa mwezi ujao,sw,planting,coffee,,,,transplant seedlings
+f34,when is sowing time for corn here,en,planting,maize,,,,
+f35,Habari za asubuhi,sw,help,,,,,greeting
+f36,how does this work,en,help,,,,,
+f37,naomba menyu,sw,help,,,,,
+f38,asante kwa ushauri wako,sw,other,,,,,
+f39,ok got it,en,other,,,,,
+f40,jua ni kali sana leo shambani,sw,other,,,,,weather chat
